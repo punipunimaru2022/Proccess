@@ -1,0 +1,51 @@
+﻿{% extends "base.html" %}
+　　{% block title %}
+    面接結果画面
+    {% endblock %}
+
+{% load static %}
+
+     {% block link %}
+     <link rel="stylesheet" href="{%static 'css/history/rireki_detail.css' %}">
+     {% endblock %}
+    
+     {% block content %}
+
+     <p class="title">
+        <span class="a">総</span>
+        <span class="b">評</span>
+    </p>
+    
+    <p class="detail">総評です総評です総評です総評です総評です総評です<br />
+        総評です総評です総評です総評です総評です総評です総評です総評です<br />
+        <br />
+        総評です総評です総評です総評です総評です総評です総評です総評です総評です</p>
+     
+    <div class="Resultsheet">
+        <input type="hidden" id="mensetuChara" value="{{ chara }}">
+        <!-- base.cssとクラス名が被るのでNを大文字にしてます-->
+        <div class="userName">
+            <h2>「{{ user.username }} 」さんの面接結果</h2>
+        </div>
+        <br><br><br>
+
+        {% for history in select_historyTbl %}
+        <h3 id="mensetuNames">面接者：<span id="mensetuName">{{ history.resultCharacter }}</span></h3>
+        <h3 id="mensetutime">面接時間：{{ history.resultTime }}</h3>
+        <div class="box1">
+            <span class="box-title">文字起こし</span>
+            <div id="resultField">
+                <span id="resultQuestion"> {{ history.resultQuestion }}</span>
+                <span id="resultMojiokoshi">{{ history.resultText }}</span>
+            <span class="box-question"></span>
+            </div>
+
+        </div>
+
+        <textarea name="memo" id="memo" placeholder=" メモ" readonly>{{history.memo}}</textarea>
+        {%endfor%}
+        <a href="{% url 'history' %}" ><button id="return_list">一覧へ</button></a>
+        <script type="text/javascript" src="{%static 'js/history/history_detail.js' %}"></script>
+
+    </div>
+    {% endblock %}

@@ -1,0 +1,85 @@
+header{
+  height:100px;
+  background-color:black;
+}
+
+    header img{
+      margin-top:1%;
+      margin-left:2%;
+    }
+
+.jumbotron{
+  background-image :url("../images/haikei1.jpeg");
+  background-size:cover;
+  height:89.7%;
+}
+
+.opacityDiv{
+  height:100%;
+  background:rgba(255,255,255,0.2)
+}
+
+.container{
+  padding-top:10%;
+}
+
+.cardbody{
+  margin-bottom:0%;
+  background-color:red;
+}
+.auth-form {
+  font-size: 14px;
+  font-family: Roboto,sans-serif;
+  max-width: 500px;
+  margin-bottom:0%;
+}
+.auth-form label {
+  margin-bottom: 0;
+}
+.auth-form input[type='text'], input[type='password'], input {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #606060;
+  border-radius: 0.25rem;
+}
+.login-error-text {
+  color: #ff0000;
+  font-size: 12px;
+  padding: 1px 0 5px 0;
+}
+
+
+.login-error-text ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.alert-text {
+  font-size: 14px;
+}
+.auth-button {
+  margin-top: 10px;
+}
+.logout-content {
+  text-align: center;
+}
+
+.form-control {
+  background-color:#685b67;
+  color:white;
+  border:none;
+  margin-bottom: 0;
+}
+
+    .form-control:hover{
+      border:solid 1px #685b67;
+      background: #fff;
+      color:#685b67;
+      -webkit-transition: .3s ease;
+    transition: .3s ease;
+   }
+    

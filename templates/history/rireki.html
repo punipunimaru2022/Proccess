@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+　  {% block title %}
+    履歴画面
+    {% endblock %}
+
+    {% block link %}
+    <link rel="stylesheet" href="{%static 'css/history/rireki.css' %}">
+    {% endblock %}
+
+
+
+{% block content %}
+
+    <div class="tabbox">
+        <input type="radio" name="tabset" id="tabcheck1" checked /><label for="tabcheck1" class="tab">練習モード</label>
+        <input type="radio" name="tabset" id="tabcheck2"/><label for="tabcheck2" class="tab">本番モード</label>
+        
+        <div class="tabcontent" id="tabcontent1">
+            
+            練習モードの面接履歴
+            <form method="POST" action="{% url 'history_detail' %}" >
+                <!-- csrf_token・・・セキュリティ対策(必須)-->
+                {% csrf_token %}   
+                <div id="table_scroll">
+                <table class="input_rireki">  
+                    <thead>
+                        <tr class="his_tr">
+                            <th class="his_th" width="10%">項番</th>
+                            <th class="his_th" width="50%">練習日時</th>
+                            <th class="his_th" width="40%">リンク</th>
+                        </tr>
+                    </thead>
+                    {% for history in historyTbl %}
+                    <tbody>
+                        {% if history.mode == "1"%}
+                        <tr class="his_tr">
+                            <td class="his_1"><input type="hidden" name="history_id" value="{{history.id}}">{{ history.id }}</td>
+                            <td class="his_2">{{ history.date }}</td>
+                            <td class="his_3"><input type="submit" value="総評へのリンク" class="submitButton" /></td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                    {%endfor%}
+                </table>
+            </form>
+            </div>
+        </div> 
+        <div class="tabcontent" id="tabcontent2">
+            本番モードの面接履歴
+            <form method="POST" action="{% url 'history_detail' %}" >
+                 <!-- csrf_token・・・セキュリティ対策(必須)-->
+                 {% csrf_token %}       
+                <table class="input_rireki">  
+                    <thead>
+                        <tr class="his_tr">
+                            <th class="his_th">項番</th>
+                            <th class="his_th">練習日時</th>
+                            <th class="his_th">リンク</th>
+                        </tr>
+                    </thead>
+                    {% for history in historyTbl %}
+                    {% if history.mode == "2"%}
+                    <tbody>
+                        <tr class="his_tr"> 
+                            <td class="his_1"><input type="hidden" name="history_id" value="{{history.id}}">{{ history.id }}</td>
+                            <td class="his_2">{{ history.date }}</td>
+                            <td class="his_3"><input type="submit" value="総評へのリンク" class="submitButton" /></td>  
+                        </tr>
+                    </tbody>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+            </form>
+        </div> 
+    </div>
+
+    <!-- モーダルエリアここから -->
+    <div class="modal-open"><a href="#modal">絞り込み</a></div>
+
+    <div class="modal" id="modal">
+        <a href="#!" class="overlay"></a>
+        <div class="modal-wrapper">
+
+            <a href="#!" class="modal-close">✕</a>
+            <div class="modal-content">
+                <div class="insert">
+                    <br>
+                    <h3>・並べ替え</h3>
+                    <p><br>
+                        　　<input type="radio" name="sort" value="昇順">昇順
+                        　　<input type="radio" name="sort" value="降順">降順
+                    </p><br>
+                    <h3>・絞り込み</h3>
+                    <p><br>
+                        　　日付：<input type="date"><br><br>
+                        　　<label for="period">AI面接官：</label>
+                        <select id="period" onchange="jump()">
+                            <option value=0></option>
+                            <option value=1>八木巻</option>
+                            <option value=2>如月</option>
+                            <option value=3>小井沼</option>
+                            <option value=4>早乙女</option>
+                            <option value=5>鳳凰</option>
+                            <option value=6>藤野</option>
+                        </select><br><br>
+
+                        　　<label for="period">評価：</label>
+                        <select id="period" onchange="jump()">
+                            <option value=0></option>
+                            <option value=1>S</option>
+                            <option value=2>A</option>
+                            <option value=3>B</option>
+                            <option value=4>C</option>
+                        </select><br><br>
+
+                        　　質問項目：<input type="text" size="20">
+
+                    </p>
+
+                        <a href="{% url 'history' %}" class="close_btn">検索</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- モーダルエリアここまで -->
+{% endblock %}

@@ -1,0 +1,349 @@
+
+
+.back1 {
+    background-color: black;
+    height: 85px;
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    top: 1.5%;
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    top: 1.5%;
+}
+
+.username {
+    position: absolute;
+    border-radius: 5px;
+    margin: 0.7%;
+    color: white;
+    right: 21%;
+    top: 2.5%;
+}
+
+.logout {
+    position: absolute;
+    border-radius: 5px;
+    margin: 0.7%;
+    text-align: center;
+    color: white;
+    text-decoration: none; /*アンダーバーを消す*/
+    right: 12%;
+    top: 2.5%;
+}
+
+.settei {
+    position: absolute;
+    border-radius: 5px;
+    margin: 0.7%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    right: 5%;
+    top: 2.5%;
+}
+
+
+.tabbox {
+    position: absolute;       
+    top: 20%;
+    margin-left: 10%;
+    box-sizing: content-box;
+    width: 78%;
+}
+
+.tab {
+    display: inline-block; /* インラインブロック化 */
+    border-width: 1px 1px 0px 1px; /* 上側と左右に枠線を引く */
+    border-style: solid; /* 枠線の種類は「実線」 */
+    border-color: black; /* 枠線の色は「黒」 */
+    border-radius: 0.5em 0.5em 0px 0px; /* 左上と右上の角だけを丸くする */
+    padding: 0.75em 1em; /* 内側の余白量 */
+    font-weight: bold; /* タブの文字を太字にする */
+    color: black; /* タブの文字色：黒色 */
+    background-color: #e0e0e0; /* タブの(非選択状態の)背景色：灰色 */
+}
+
+
+    /* ▼タブにマウスポインタが載った際の装飾 */
+    .tab:hover {
+        color: steelblue; /* タブの文字色*/
+        background-color: lightsteelblue; /* タブの背景色 */
+        cursor: pointer; /* マウスポインタの形状を「指(指し示す形)」にする */
+    }
+
+/* ▼選択状態のタブ(＝チェックが入っているラジオボタンの隣にあるタブの装飾) */
+input:checked + .tab {
+    color: white; /* タブの文字色：白色 */
+    background-color: black;
+}
+
+/* ▼タブ機能を制御するラジオボタン(非表示にする) */
+.tabbox input[type=radio] {
+    display: none;
+}
+
+/* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+.tabcontent {
+    display: none; /* 標準では非表示にする */
+    border: 1px solid black; /* 枠線を引く：黒色で1ピクセルの実線 */
+    padding: 1em; /* 内側の余白量 */
+    background-color: white; /* 背景色：(※選択中のタブの背景色と合わせます) */
+
+}
+
+
+/* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+#tabcheck1:checked ~ #tabcontent1 {
+    display: block;
+    
+}
+
+#tabcheck2:checked ~ #tabcontent2 {
+    display: block;
+    
+}
+
+/* ▼チェックが入っているラジオボタンの隣にあるタブの装飾(＝選択状態のタブ) */
+input:checked + .tab {
+    z-index: 10; /* ※2A */
+    position: relative; /* ※3 */
+}
+/* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+.tabcontent {
+    margin-top: -1px; /* ※1 */
+    z-index: 0; /* ※2B */
+    position: relative; /* ※3 */
+}
+
+/*履歴のテーブル設定*/
+.input_rireki{   
+    position:fixed;
+    width:78%;
+    border-collapse:collapse;    /*セル同士の隙間をなくす*/
+    margin:17px 0px 0px -17px;
+}
+
+
+
+.his_th{
+    border: 1px solid black;
+    border-top: none;   
+    background-color: white;
+}
+
+.his_tr{
+    margin: -1px 0px 0px 0px;
+    
+}
+
+.his_1{
+    border: 1px solid black;
+    width:10%;
+    border-top: none;   
+    background-color: white;
+    text-align:center;
+    padding: 1em; /* 内側の余白量 */
+}
+
+.his_2{
+    border: 1px solid black;
+    width:50%;
+    border-top: none;   
+    background-color: white;
+    padding: 1em; /* 内側の余白量 */
+}
+
+.his_3{
+    border: 1px solid black;
+    width:40%;
+    border-top: none;   
+    background-color: white;
+    color:dodgerblue;
+    text-decoration:underline;
+    padding: 1em; /* 内側の余白量 */
+}
+
+ /*リンク風にしているだけ*/
+.submitButton{
+    border:none;
+    background-color:transparent;
+    color:blue;
+    text-decoration:underline;
+    font-size:15px;
+}
+
+    .submitButton:hover{
+        color:rgb(174, 0, 255);
+    }
+
+
+
+/*モーダルの設定*/
+.modal-open {
+    position: absolute;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 0.5% 1% 0.5% 1%;
+    top: 15%;
+    right: 10%;
+}
+
+    .modal-open a {
+        display: inline-block;
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+    .modal:not(:target) {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    .modal:target {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    .modal .overlay {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #000;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+    }
+
+.modal-wrapper {
+    width: 100%;
+    width: 500px;
+    height: 100%;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-contents {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modal-content {
+    margin: 25px;
+}
+
+.modal-contents {
+    text-align: center;
+}
+
+input.txt2 {
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.popup_wrap input {
+    display: none;
+}
+
+.popup_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: lightsteelblue;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0s 0.5s;
+    transform: scale(0);
+}
+
+.popup_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.popup_content {
+    position: relative;
+    align-self: center;
+    height: 150px;
+    width: 75%;
+    max-width: 800px;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 1.4em;
+    transition: 0.5s;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(94, 94, 94, 0.7);
+}
+
+    .popup_content p {
+        padding: 20px 20px 5px 20px;
+        text-align: center;
+    }
+
+.popup_wrap input:checked ~ .popup_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+}
+
+.close_btn {
+    position: absolute;
+    color: steelblue;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+    border: 1px solid steelblue;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none; /*アンダーバーを消す*/
+    left: 43%;
+    top: 80%;
+}
+
+    .close_btn:hover {
+        background: steelblue;
+        color: #fff;
+        transition: .3s ease;
+    }
+
+
+
+
