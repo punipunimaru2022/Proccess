@@ -18,103 +18,103 @@ var questionArray =[];
 
 var woman1 = [
     //自己紹介について
-    "/static/audio/woman1/question1.wav",
-    "/static/audio/woman1/question2.wav",
-    "/static/audio/woman1/question3.wav",
-    "/static/audio/woman1/question4.wav",
-    "/static/audio/woman1/question5.wav",
-    "/static/audio/woman1/question6.wav",
-    "/static/audio/woman1/question7.wav",
-    "/static/audio/woman1/question8.wav",
-    "/static/audio/woman1/question9.wav",
-    "/static/audio/woman1/question10.wav",
+    "/static/movie/woman1/question1.mp4",
+    "/static/movie/woman1/question2.mp4",
+    "/static/movie/woman1/question3.mp4",
+    "/static/movie/woman1/question4.mp4",
+    "/static/movie/woman1/question5.mp4",
+    "/static/movie/woman1/question6.mp4",
+    "/static/movie/woman1/question7.mp4",
+    "/static/movie/woman1/question8.mp4",
+    "/static/movie/woman1/question9.mp4",
+    "/static/movie/woman1/question10.mp4",
     
 ];
 
 var man1 =[
     //志望動機について
-    "/static/audio/man1/question11.wav",
-    "/static/audio/man1/question12.wav",
-    "/static/audio/man1/question13.wav",
-    "/static/audio/man1/question14.wav",
-    "/static/audio/man1/question15.wav",
+    "/static/movie/man1/question11.mp4",
+    "/static/movie/man1/question12.mp4",
+    "/static/movie/man1/question13.mp4",
+    "/static/movie/man1/question14.mp4",
+    "/static/movie/man1/question15.mp4",
 
     //自己評価について
-    "/static/audio/man1/question28.wav",
-    "/static/audio/man1/question29.wav",
-    "/static/audio/man1/question30.wav",
-    "/static/audio/man1/question31.wav",
-    "/static/audio/man1/question32.wav",
-    "/static/audio/man1/question33.wav",
+    "/static/movie/man1/question28.mp4",
+    "/static/movie/man1/question29.mp4",
+    "/static/movie/man1/question30.mp4",
+    "/static/movie/man1/question31.mp4",
+    "/static/movie/man1/question32.mp4",
+    "/static/movie/man1/question33.mp4",
     
 ];
 
 var woman2 = [
     //経験談について
-    "/static/audio/woman2/question16.wav",
-    "/static/audio/woman2/question17.wav",
-    "/static/audio/woman2/question18.wav",
-    "/static/audio/woman2/question19.wav",
-    "/static/audio/woman2/question20.wav",
-    "/static/audio/woman2/question21.wav",
-    "/static/audio/woman2/question22.wav",
-    "/static/audio/woman2/question23.wav",
-    "/static/audio/woman2/question24.wav",
-    "/static/audio/woman2/question25.wav",
-    "/static/audio/woman2/question26.wav",
-    "/static/audio/woman2/question27.wav",
+    "/static/movie/woman2/question16.mp4",
+    "/static/movie/woman2/question17.mp4",
+    "/static/movie/woman2/question18.mp4",
+    "/static/movie/woman2/question19.mp4",
+    "/static/movie/woman2/question20.mp4",
+    "/static/movie/woman2/question21.mp4",
+    "/static/movie/woman2/question22.mp4",
+    "/static/movie/woman2/question23.mp4",
+    "/static/movie/woman2/question24.mp4",
+    "/static/movie/woman2/question25.mp4",
+    "/static/movie/woman2/question26.mp4",
+    "/static/movie/woman2/question27.mp4",
 ];
 
 var man2 = [
 
     //目標"キャリアプランについて"
-    "/static/audio/man2/question34.wav",
-    "/static/audio/man2/question35.wav",
-    "/static/audio/man2/question36.wav",
-    "/static/audio/man2/question37.wav",
-    "/static/audio/man2/question38.wav",
-    "/static/audio/man2/question39.wav",
-    "/static/audio/man2/question40.wav",
-    "/static/audio/man2/question41.wav",
-    "/static/audio/man2/question42.wav",
-    "/static/audio/man2/question43.wav",
+    "/static/movie/man2/question34.mp4",
+    "/static/movie/man2/question35.mp4",
+    "/static/movie/man2/question36.mp4",
+    "/static/movie/man2/question37.mp4",
+    "/static/movie/man2/question38.mp4",
+    "/static/movie/man2/question39.mp4",
+    "/static/movie/man2/question40.mp4",
+    "/static/movie/man2/question41.mp4",
+    "/static/movie/man2/question42.mp4",
+    "/static/movie/man2/question43.mp4",
 ];
 
 var woman3 = [
 
     //勤務条件について
-    "/static/audio/woman3/question44.wav",
-    "/static/audio/woman3/question45.wav",
-    "/static/audio/woman3/question46.wav",
-    "/static/audio/woman3/question47.wav",
+    "/static/movie/woman3/question44.mp4",
+    "/static/movie/woman3/question45.mp4",
+    "/static/movie/woman3/question46.mp4",
+    "/static/movie/woman3/question47.mp4",
 
     //答えにくい"困りやすい質問"
-    "/static/audio/woman3/question48.wav",
-    "/static/audio/woman3/question49.wav",
-    "/static/audio/woman3/question50.wav",
-    "/static/audio/woman3/question51.wav",
-    "/static/audio/woman3/question52.wav",
-    "/static/audio/woman3/question53.wav",
-    "/static/audio/woman3/question54.wav",
-    "/static/audio/woman3/question55.wav",
-    "/static/audio/woman3/question56.wav",
+    "/static/movie/woman3/question48.mp4",
+    "/static/movie/woman3/question49.mp4",
+    "/static/movie/woman3/question50.mp4",
+    "/static/movie/woman3/question51.mp4",
+    "/static/movie/woman3/question52.mp4",
+    "/static/movie/woman3/question53.mp4",
+    "/static/movie/woman3/question54.mp4",
+    "/static/movie/woman3/question55.mp4",
+    "/static/movie/woman3/question56.mp4",
 ];
 
 var man3 = [
     //その他
-    //mp3の部分音声データが出来次第変更する
-    "/static/audio/man3/question57.mp3",
-    "/static/audio/man3/question58.mp3",
-    "/static/audio/man3/question59.mp3",
-    "/static/audio/man3/question60.mp3",
-    "/static/audio/man3/question61.mp3",
-    "/static/audio/man3/question62.mp3",
-    "/static/audio/man3/question63.mp3",
-    "/static/audio/man3/question64.mp3",
-    "/static/audio/man3/question65.mp3",
-    "/static/audio/man3/question66.mp3",
-    "/static/audio/man3/question67.mp3",
-    "/static/audio/man3/question68.mp3",
+    //mp4の部分音声データが出来次第変更する
+    "/static/movie/man3/question57.mp4",
+    "/static/movie/man3/question58.mp4",
+    "/static/movie/man3/question59.mp4",
+    "/static/movie/man3/question60.mp4",
+    "/static/movie/man3/question61.mp4",
+    "/static/movie/man3/question62.mp4",
+    "/static/movie/man3/question63.mp4",
+    "/static/movie/man3/question64.mp4",
+    "/static/movie/man3/question65.mp4",
+    "/static/movie/man3/question66.mp4",
+    "/static/movie/man3/question67.mp4",
+    "/static/movie/man3/question68.mp4",
 
 ];
 
@@ -157,38 +157,53 @@ selectQuestions = [];
 
     for (var i=0;i < charasArray.length;i++){
       var chara = charasArray[i].substr(charasArray[i].lastIndexOf("/")+1);
+      var video_poster = "/static/images/character/";
+      var aicon_id = "aicon" + (i+1);
       switch(chara){
         case "man1.png" :
           questionArray = questionArray.concat(man1);
-          startVoiceArray[i] = "/static/audio/man1/start.wav";
-          endVoiceArray[i] = "/static/audio/man1/end.wav";
+          startVoiceArray[i] = "/static/movie/man1/start.mp4";
+          endVoiceArray[i] = "/static/movie/man1/end.mp4";
+          video_poster = video_poster + "man1_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
           break;
     
         case "man2.png" :
           questionArray = questionArray.concat(man2);
-          startVoiceArray[i] = "/static/audio/man2/start.wav";
-          endVoiceArray[i] = "/static/audio/man2/end.wav";
+          startVoiceArray[i] = "/static/movie/man2/start.mp4";
+          endVoiceArray[i] = "/static/movie/man2/end.mp4";
+          video_poster = video_poster + "man2_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
           break;
     
         case "man3.png" :
           questionArray = questionArray.concat(man3);
-          startVoiceArray[i] = "/static/audio/man3/start.wav";
-          endVoiceArray[i] = "/static/audio/man3/end.wav";
+          startVoiceArray[i] = "/static/movie/man3/start.mp4";
+          endVoiceArray[i] = "/static/movie/man3/end.mp4";
+          video_poster = video_poster + "man3_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
+
           break;
         case "woman1.png" :
           questionArray = questionArray.concat(woman1);
-          startVoiceArray[i] = "/static/audio/woman1/start.wav";
-          endVoiceArray[i] = "/static/audio/woman1/end.wav";
+          startVoiceArray[i] = "/static/movie/woman1/start.mp4";
+          endVoiceArray[i] = "/static/movie/woman1/end.mp4";
+          video_poster = video_poster + "woman1_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
           break;
         case "woman2.png" :
           questionArray = questionArray.concat(woman2);
-          startVoiceArray[i] = "/static/audio/woman2/start.wav";
-          endVoiceArray[i] = "/static/audio/woman2/end.wav";
+          startVoiceArray[i] = "/static/movie/woman2/start.mp4";
+          endVoiceArray[i] = "/static/movie/woman2/end.mp4";
+          video_poster = video_poster + "woman2_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
           break;
         case "woman3.png" :
           questionArray = questionArray.concat(woman3);
-          startVoiceArray[i] = "/static/audio/woman3/start.wav";
-          endVoiceArray[i] = "/static/audio/woman3/end.wav";
+          startVoiceArray[i] = "/static/movie/woman3/start.mp4";
+          endVoiceArray[i] = "/static/movie/woman3/end.mp4";
+          video_poster = video_poster + "woman3_poster.png"
+          document.getElementById(aicon_id).poster = video_poster;
           break;
       }
     }
@@ -436,70 +451,95 @@ selectQuestions = [];
 
     //面接を開始しますの挨拶読み上げ関数
     function firstYomiage(){
-      var start = new Audio(startVoiceArray[rndNum]);
+      var movie_src = startVoiceArray[rndNum];
+      var getInitial = getChara(count);
+      var start;
+      if(document.getElementById('aicon1').poster.indexOf(getInitial) > -1){
+      start = document.getElementById('aicon1');
+      }else if(document.getElementById('aicon2').poster.indexOf(getInitial) > -1){
+      start = document.getElementById('aicon2');
+      }else if(document.getElementById('aicon3').poster.indexOf(getInitial) > -1){
+      start = document.getElementById('aicon3');
+      }
+
+      start.src = movie_src;
       start.play();
       changeBorder(-1);
       start.onended = function(){
+
+      document.getElementById('aicon1').className = ""
+      document.getElementById('aicon2').className = "";
+      document.getElementById('aicon3').className = "";
+      window.setTimeout(function(){
+      yomiage(count)
+      count++;
+      },1500);
+      }
+      }
+
+      function yomiage(count){
+        var movie_src = selectQuestions[count];
+        var getInitial = getChara(count);
+        var yomiage;
+        if(document.getElementById('aicon1').poster.indexOf(getInitial) > -1){
+        yomiage = document.getElementById('aicon1');
+        }else if(document.getElementById('aicon2').poster.indexOf(getInitial) > -1){
+        yomiage = document.getElementById('aicon2');
+        }else if(document.getElementById('aicon3').poster.indexOf(getInitial) > -1){
+        yomiage = document.getElementById('aicon3');
+        }
+
+        yomiage.src = movie_src;
+        yomiage.play();
+        changeBorder(count);
+        yomiage.onended = function(){
+        console.log("読み上げ終わり");
         document.getElementById('aicon1').className = "";
         document.getElementById('aicon2').className = "";
         document.getElementById('aicon3').className = "";
-        window.setTimeout(function(){
-          yomiage(count);
-          count++;
-        },1500);
-      }
-    }
-
-    function yomiage(count){
-        var yomiage = new Audio(selectQuestions[count]);
-        yomiage.play();
-        changeBorder(count);
-      
-        yomiage.onended = function(){
-          console.log("読み上げ終わり");
-          document.getElementById('aicon1').className = "";
-          document.getElementById('aicon2').className = "";
-          document.getElementById('aicon3').className = "";
-          if(count == situmonsu){
-              //ストップウォッチを止める
-              clearTimeout(timerId);
-              //次の画面に経過時間を渡す
-              document.getElementById('resultTime').value = timer.textContent
-              //次の画面に文字起こし結果を渡す
-              document.getElementById('resultMojiokoshi').value = mojiokoshiResult;
-              endView();
-          }else{
-            //カウントダウン(１秒ごとに繰り返す)
-            countdownTimer = setInterval(countDown, 1000);
-            recognition.start();
-            document.getElementsByClassName("myvideo").item(0).className = "myvideo_speaking";
-          } 
+        if(count == situmonsu){
+        //ストップウォッチを止める
+        clearTimeout(timerId);
+        //次の画面に経過時間を渡す
+        document.getElementById('resultTime').value = timer.textContent
+        //次の画面に文字起こし結果を渡す
+        document.getElementById('resultMojiokoshi').value = mojiokoshiResult;
+        endView();
+        }else{
+        //カウントダウン(１秒ごとに繰り返す)
+        countdownTimer = setInterval(countDown, 1000);
+        recognition.start();
+        document.getElementsByClassName("myvideo").item(0).className = "myvideo_speaking";
         }
+        }
+        }
+        }
+
+  function getChara(count){
+      var initial;
+      var num;
+      if(count == -1){
+      initial = startVoiceArray[rndNum].substr(startVoiceArray[rndNum].indexOf("movie/")+6,1);
+      num = startVoiceArray[rndNum].substr(startVoiceArray[rndNum].indexOf("/start")-1,1);
+      }else if(count == situmonsu){
+      initial = endVoiceArray[rndNum].substr(endVoiceArray[rndNum].indexOf("movie/")+6,1);
+      num = endVoiceArray[rndNum].substr(endVoiceArray[rndNum].indexOf("/end")-1,1);
+      }else{
+      initial = selectQuestions[count].substr(selectQuestions[count].indexOf("movie/")+6,1);
+      num = selectQuestions[count].substr(selectQuestions[count].indexOf("/question")-1,1);
       }
-    }
+      if(initial =="m"){
+      initial = "man" + num;
+      }else{
+      initial = "woman" + num;
+      }
+      return initial;
+      }
+                      
 
   function changeBorder(count){
       //面接官が話しているときの枠の色を変更する
-      var initial;
-      var num;
-      //start
-      if(count == -1){
-          initial = startVoiceArray[rndNum].substr(startVoiceArray[rndNum].indexOf("audio/")+6,1);
-          num = startVoiceArray[rndNum].substr(startVoiceArray[rndNum].indexOf("/start")-1,1);
-      }else if(count == situmonsu){
-          initial = endVoiceArray[rndNum].substr(endVoiceArray[rndNum].indexOf("audio/")+6,1);
-          num = endVoiceArray[rndNum].substr(endVoiceArray[rndNum].indexOf("/end")-1,1);
-      }else{ 
-          initial = selectQuestions[count].substr(selectQuestions[count].indexOf("audio/")+6,1);
-          num = selectQuestions[count].substr(selectQuestions[count].indexOf("/question")-1,1);
-      }
-
-      if(initial =="m"){
-        initial = "man" + num;
-      }else{
-        initial = "woman" + num;
-      }
- 
+      var initial = getChara(count);
       console.log(initial);
       if(document.getElementById('aicon1').src.indexOf(initial) > -1){
         document.getElementById('aicon1').className = "chara_speaking1";
@@ -508,7 +548,6 @@ selectQuestions = [];
       }else if(document.getElementById('aicon3').src.indexOf(initial) > -1){
         document.getElementById('aicon3').className = "chara_speaking3";
       }
-
  }
   //結果を見るボタンが押された時の処理
   function resultView(){
