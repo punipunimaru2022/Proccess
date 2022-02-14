@@ -18,34 +18,34 @@ var questionArray =[];
 
 var woman1 = [
     //自己紹介について
-    "/static/movie/woman1/question1.mp4",
+    //"/static/movie/woman1/question1.mp4",
     "/static/movie/woman1/question2.mp4",
-    "/static/movie/woman1/question3.mp4",
-    "/static/movie/woman1/question4.mp4",
-    "/static/movie/woman1/question5.mp4",
-    "/static/movie/woman1/question6.mp4",
-    "/static/movie/woman1/question7.mp4",
+    //"/static/movie/woman1/question3.mp4",
+    //"/static/movie/woman1/question4.mp4",
+    //"/static/movie/woman1/question5.mp4",
+    //"/static/movie/woman1/question6.mp4",
+    //"/static/movie/woman1/question7.mp4",
     "/static/movie/woman1/question8.mp4",
-    "/static/movie/woman1/question9.mp4",
-    "/static/movie/woman1/question10.mp4",
+    //"/static/movie/woman1/question9.mp4",
+    //"/static/movie/woman1/question10.mp4",
     
 ];
 
 var man1 =[
     //志望動機について
-    "/static/movie/man1/question11.mp4",
-    "/static/movie/man1/question12.mp4",
-    "/static/movie/man1/question13.mp4",
+    //"/static/movie/man1/question11.mp4",
+    //"/static/movie/man1/question12.mp4",
+    //"/static/movie/man1/question13.mp4",
     "/static/movie/man1/question14.mp4",
-    "/static/movie/man1/question15.mp4",
+    //"/static/movie/man1/question15.mp4",
 
     //自己評価について
-    "/static/movie/man1/question28.mp4",
-    "/static/movie/man1/question29.mp4",
-    "/static/movie/man1/question30.mp4",
-    "/static/movie/man1/question31.mp4",
-    "/static/movie/man1/question32.mp4",
-    "/static/movie/man1/question33.mp4",
+    //"/static/movie/man1/question28.mp4",
+    //"/static/movie/man1/question29.mp4",
+    //"/static/movie/man1/question30.mp4",
+    //"/static/movie/man1/question31.mp4",
+    //"/static/movie/man1/question32.mp4",
+    //"/static/movie/man1/question33.mp4",
     
 ];
 
@@ -411,23 +411,25 @@ selectQuestions = [];
         if(count < situmonsu){
           counterTime = counterMaxTime;
           mojiokoshiResult[count-1]  = mojiokoshi;
+          mojiokoshi="";
           console.log(mojiokoshiResult);
           if(returnCheck == true){
             count--;
             returnCheck = false;
           }
-          yomiage(count);
           finalTranscript="";
+          yomiage(count);
           count++;
         }else{
           mojiokoshiResult[count-1]  = mojiokoshi;
+          mojiokoshi="";
           console.log(mojiokoshiResult);
           if(returnCheck == true){
             count--;
             returnCheck = false;
           }
-          yomiage(count);
           finalTranscript="";
+          yomiage(count);
           count++;
         }
       }
@@ -452,14 +454,15 @@ selectQuestions = [];
     //面接を開始しますの挨拶読み上げ関数
     function firstYomiage(){
       var movie_src = startVoiceArray[rndNum];
-      var getInitial = getChara(count);
+      console.log("first" + movie_src);
+      var getInitial = getChara(-1);
       var start;
       if(document.getElementById('aicon1').poster.indexOf(getInitial) > -1){
-      start = document.getElementById('aicon1');
+          start = document.getElementById('aicon1');
       }else if(document.getElementById('aicon2').poster.indexOf(getInitial) > -1){
-      start = document.getElementById('aicon2');
+          start = document.getElementById('aicon2');
       }else if(document.getElementById('aicon3').poster.indexOf(getInitial) > -1){
-      start = document.getElementById('aicon3');
+          start = document.getElementById('aicon3');
       }
 
       start.src = movie_src;
